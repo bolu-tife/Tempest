@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)http://localhost:8080/Storm_Prepper/viewplan3.jsp -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+       <link rel="icon" href="./JSP Page_files/storm2.jpeg">
+       
+        <link href="./JSP Page_files/storm2.jpeg" rel="icon">
+        
+        <title>JSP Page</title>
+        <link rel="stylesheet" href="./JSP Page_files/bootstrap.min.css">
+        <!--        <link rel="stylesheet" href="newcss.css">-->
+        <script src="./JSP Page_files/bootstrap.min.js"></script>
+        <link href="./JSP Page_files/grayscalemin.css" rel="stylesheet">
+        <link href="./JSP Page_files/all.min.css" rel="stylesheet">
+
+
+    </head>
+    <body id="page-top" style="background-image: url(bg-main.jpg); background-repeat: no-repeat; background-position: center; background-size: cover;">
+
+
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="http://localhost:8080/Storm_Prepper/viewplan3.jsp#page-top" style="color: black;">Tempest: <small>The storm is coming</small></a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+
+                        <li class="nav-item ">
+                            <a class="nav-link" href="http://localhost:8080/Storm_Prepper/home.jsp">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        
+                        <li class="nav-item active ">
+                            <a class="nav-link" href="http://localhost:8080/Storm_Prepper/plan.jsp">Plan</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://localhost:8080/Storm_Prepper/emergency.jsp">Emergency</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://localhost:8080/Storm_Prepper/kit.jsp">Emergency Kit</a>
+                        </li>
+                        <li>
+                            <a href="http://localhost:8080/Storm_Prepper/signout.jsp" class="btn btn-primary js-scroll-trigger" style="margin:1rem; line-height: 1px">Sign Out</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </nav>
+
+        <div class="container">
+            <div class="py-5 text-center">
+                <img class="d-block mx-auto mb-4" src="./JSP Page_files/storm2.jpeg" alt="" width="72" height="72">
+                <img src="http://localhost:8080/Storm_Prepper/viewplan3.jsp" alt="">
+                <h2>Emergency Preparation Checklist</h2>
+                <p class="lead" style="text-align: justify">
+                    Make a plan today. Your family may not be together if a disaster strikes, so it is important to know which types of disasters could affect your area.  Know how you’ll contact one another and reconnect if separated. Establish a family meeting place that’s familiar and easy to find.
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-md-8 order-md-1">
+                    
+                  
+                    
+                    <h4 class="mb-3">Local Contact</h4>
+                    <form class="needs-validation" novalidate="" action="http://localhost:8080/Storm_Prepper/kit.jsp" method="post">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="localname">Name</label>
+                                <input type="text" class="form-control" name="localname" id="localname" placeholder="" value="Bolu" disabled="">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="localno">Phone Number</label>
+                                <input type="text" class="form-control" name="localno" id="localno" placeholder="" value="08160592510" disabled="">
+                                <div class="invalid-feedback">
+                                    Valid Phone number is required.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="localmail">Email <span class="text-muted"></span></label>
+                            <input type="email" class="form-control" id="localmail" name="localmail" placeholder="you@example.com" value="boluomosowon@gmail.com" disabled="">
+                            <div class="invalid-feedback">
+                                Please enter a valid email address.
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="localadd">Address</label>
+                            <input type="text" class="form-control" id="localadd" name="localadd" placeholder="00 Streetname St" value="3c, Boundary Road" disabled="">
+
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="localadd2">Address 2 <span class="text-muted">(Optional)</span></label>
+                            <input type="text" class="form-control" id="localadd2" name="localadd2" placeholder="City, Country" value="Shasha" disabled="">
+                        </div>
+
+                        <hr class="mb-4">
+
+                        <h4 class="mb-3">Out of State Contact</h4>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="outname">Name</label>
+                                <input type="text" class="form-control" id="outname" name="outname" placeholder="" value="" disabled="">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="outoo">Phone Number</label>
+                                <input type="text" class="form-control" id="outno" name="outno" placeholder="" value="" disabled="">
+                                <div class="invalid-feedback">
+                                    Valid Phone number is required.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="outmail">Email <span class="text-muted">(Optional)</span></label>
+                            <input type="email" class="form-control" id="outmail" name="outmail" placeholder="you@example.com" value="" disabled="">
+                            <div class="invalid-feedback">
+                                Please enter a valid email address.
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="outadd">Address</label>
+                            <input type="text" class="form-control" id="outadd" name="outadd" placeholder="00 Streetname St" value="" disabled="">
+
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="outadd2">Address 2 <span class="text-muted">(Optional)</span></label>
+                            <input type="text" class="form-control" id="outadd2" name="outadd2" placeholder="City, Country" value="" disabled="">
+                        </div>
+
+
+                        <hr class="mb-4">
+
+                        <h4 class="mb-3">Nearest Relative</h4>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="relname">Name</label>
+                                <input type="text" class="form-control" id="relname" name="relname" placeholder="" value="" disabled="">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="relno">Phone Number</label>
+                                <input type="text" class="form-control" id="relno" name="relno" placeholder="" value="" disabled="">
+                                <div class="invalid-feedback">
+                                    Valid Phone number is required.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="relmail">Email <span class="text-muted">(Optional)</span></label>
+                            <input type="email" class="form-control" id="relmail" name="relmail" placeholder="you@example.com" value="" disabled="">
+                            <div class="invalid-feedback">
+                                Please enter a valid email address.
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="reladd">Address</label>
+                            <input type="text" class="form-control" id="reladd" name="reladd" placeholder="00 Streetname St" value="" disabled="">
+
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="reladd2">Address 2 <span class="text-muted">(Optional)</span></label>
+                            <input type="text" class="form-control" id="reladd2" name="reladd2" placeholder="City, Country" value="" disabled="">
+                        </div>
+
+
+
+                        <hr class="mb-4">
+
+                        <h4 class="mb-3">Family Contact</h4>
+                        <h6>Father</h6>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="fname">Name</label>
+                                <input type="text" class="form-control" id="fname" placeholder="" name="fname" value="" disabled="">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="fno">Phone Number</label>
+                                <input type="text" class="form-control" id="fno" placeholder="" name="fno" value="" disabled="">
+                                <div class="invalid-feedback">
+                                    Valid Phone number is required.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="fmail">Email <span class="text-muted">(Optional)</span></label>
+                            <input type="email" class="form-control" id="fmail" name="fmail" placeholder="you@example.com" value="" disabled="">
+                            <div class="invalid-feedback">
+                                Please enter a valid email address.
+                            </div>
+                        </div>
+
+                        <br>
+                        <h6>Mother</h6>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="mname">Name</label>
+                                <input type="text" class="form-control" id="mname" name="mname" placeholder="" value="" disabled="">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="mno">Phone Number</label>
+                                <input type="text" class="form-control" id="mno" name="mno" placeholder="" value="" disabled="">
+                                <div class="invalid-feedback">
+                                    Valid Phone number is required.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mmail">Email <span class="text-muted">(Optional)</span></label>
+                            <input type="email" class="form-control" id="mmail" name="mmail" placeholder="you@example.com" value="" disabled="">
+                            <div class="invalid-feedback">
+                                Please enter a valid email address.
+                            </div>
+                        </div>
+
+
+                        <br>
+                        <h6>Other</h6>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="oname">Name</label>
+                                <input type="text" class="form-control" id="oname" name="oname" placeholder="" value="" disabled="">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="ono">Phone Number</label>
+                                <input type="text" class="form-control" id="ono" name="ono" placeholder="" value="" disabled="">
+                                <div class="invalid-feedback">
+                                    Valid Phone number is required.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="omail">Email <span class="text-muted">(Optional)</span></label>
+                            <input type="email" class="form-control" id="omail" name="omail" placeholder="you@example.com" value="" disabled="">
+                            <div class="invalid-feedback">
+                                Please enter a valid email address.
+                            </div>
+                        </div>
+
+                        <hr class="mb-4">
+
+                        <h4 class="mb-3">Emergency Contact</h4>
+
+
+                        <div class="mb-3">
+                            <label for="police">Police</label>
+                            <input type="text" class="form-control" id="police" name="police" placeholder="" value="" disabled="">
+
+                        </div>
+
+
+
+                        <div class="mb-3">
+                            <label for="fire">Fire</label>
+                            <input type="text" class="form-control" id="fire" name="fire" placeholder="" value="" disabled="">
+
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="hospital">Hospital</label>
+                            <input type="text" class="form-control" id="hospital" name="hospital" placeholder="" value="" disabled="">
+
+                        </div>
+
+
+                        <hr class="mb-4">
+
+                        <h4 class="mb-3">Family Physician</h4>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="phyname">Name</label>
+                                <input type="text" class="form-control" id="phyname" name="phyname" placeholder="" value="" disabled="">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="phyno">Phone Number</label>
+                                <input type="text" class="form-control" id="phyno" name="phyno" placeholder="" value="" disabled="">
+                                <div class="invalid-feedback">
+                                    Valid Phone number is required.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="phymail">Email <span class="text-muted">(Optional)</span></label>
+                            <input type="email" class="form-control" id="phymail" name="phymail" placeholder="you@example.com" value="" disabled="">
+                            <div class="invalid-feedback">
+                                Please enter a valid email address.
+                            </div>
+                        </div>
+
+                        <br>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="phyname2">Name</label>
+                                <input type="text" class="form-control" id="phyname2" name="phyname2" placeholder="" value="" disabled="">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="phyno2">Phone Number</label>
+                                <input type="text" class="form-control" id="phyno2" name="phyno2" placeholder="" value="" disabled="">
+                                <div class="invalid-feedback">
+                                    Valid Phone number is required.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="phymail2">Email <span class="text-muted">(Optional)</span></label>
+                            <input type="email" class="form-control" id="phymail2" name="phymail2" placeholder="you@example.com" value="" disabled="">
+                            <div class="invalid-feedback">
+                                Please enter a valid email address.
+                            </div>
+                        </div>
+
+                        <hr class="mb-4">
+                        <h4 class="mb-3">Reunion Location</h4>
+                         <div class="mb-3">
+                            <label for="reunionclose">Right Outside Your Residence</label>
+                            <textarea class="form-control" id="reunionclose" name="reunionclose" rows="3" cols="80" value="" disabled=""></textarea>
+                           
+                        </div>
+                        <div class="mb-3">
+                            <label for="reunionfar">Away from the neighbourhood, in case you cannot return home</label>
+                            <textarea class="form-control" id="reunionfar" name="reunionfar" rows="3" cols="80" value="" disabled=""></textarea>
+                           
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="reunionadd">Address</label>
+                            <input type="text" class="form-control" name="reunionadd" id="reunionadd" placeholder="" value="" disabled="">
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="reunionphone">Phone Number</label>
+                            <input type="text" class="form-control" name="reunionphone" id="reunionphone" placeholder="" value="" disabled="">
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="reunionroute">Route to try first</label>
+                            <textarea class="form-control" name="reunionroute" id="reunionroute" rows="2" cols="80" value="" disabled=""></textarea>
+
+                        </div>
+                        
+                    <h4 class="mb-3">Local Contact</h4>
+                    
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="localname">Name</label>
+                                <input type="text" class="form-control" name="localname" id="localname" placeholder="" value="" disabled="">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="localno">Phone Number</label>
+                                <input type="text" class="form-control" name="localno" id="localno" placeholder="" value="" disabled="">
+                                <div class="invalid-feedback">
+                                    Valid Phone number is required.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="localmail">Email <span class="text-muted"></span></label>
+                            <input type="email" class="form-control" id="localmail" name="localmail" placeholder="you@example.com" value="" disabled="">
+                            <div class="invalid-feedback">
+                                Please enter a valid email address.
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="localadd">Address</label>
+                            <input type="text" class="form-control" id="localadd" name="localadd" placeholder="00 Streetname St" value="" disabled="">
+
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="localadd2">Address 2 <span class="text-muted">(Optional)</span></label>
+                            <input type="text" class="form-control" id="localadd2" name="localadd2" placeholder="City, Country" value="" disabled="">
+                        </div>
+
+                        <hr class="mb-4">
+
+                        <h4 class="mb-3">Out of State Contact</h4>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="outname">Name</label>
+                                <input type="text" class="form-control" id="outname" name="outname" placeholder="" value="" disabled="">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="outoo">Phone Number</label>
+                                <input type="text" class="form-control" id="outno" name="outno" placeholder="" value="" disabled="">
+                                <div class="invalid-feedback">
+                                    Valid Phone number is required.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="outmail">Email <span class="text-muted">(Optional)</span></label>
+                            <input type="email" class="form-control" id="outmail" name="outmail" placeholder="you@example.com" value="" disabled="">
+                            <div class="invalid-feedback">
+                                Please enter a valid email address.
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="outadd">Address</label>
+                            <input type="text" class="form-control" id="outadd" name="outadd" placeholder="00 Streetname St" value="" disabled="">
+
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="outadd2">Address 2 <span class="text-muted">(Optional)</span></label>
+                            <input type="text" class="form-control" id="outadd2" name="outadd2" placeholder="City, Country" value="" disabled="">
+                        </div>
+
+
+                        <hr class="mb-4">
+
+                        <h4 class="mb-3">Nearest Relative</h4>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="relname">Name</label>
+                                <input type="text" class="form-control" id="relname" name="relname" placeholder="" value="" disabled="">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="relno">Phone Number</label>
+                                <input type="text" class="form-control" id="relno" name="relno" placeholder="" value="" disabled="">
+                                <div class="invalid-feedback">
+                                    Valid Phone number is required.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="relmail">Email <span class="text-muted">(Optional)</span></label>
+                            <input type="email" class="form-control" id="relmail" name="relmail" placeholder="you@example.com" value="" disabled="">
+                            <div class="invalid-feedback">
+                                Please enter a valid email address.
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="reladd">Address</label>
+                            <input type="text" class="form-control" id="reladd" name="reladd" placeholder="00 Streetname St" value="" disabled="">
+
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="reladd2">Address 2 <span class="text-muted">(Optional)</span></label>
+                            <input type="text" class="form-control" id="reladd2" name="reladd2" placeholder="City, Country" value="" disabled="">
+                        </div>
+
+
+
+                        <hr class="mb-4">
+
+                        <h4 class="mb-3">Family Contact</h4>
+                        <h6>Father</h6>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="fname">Name</label>
+                                <input type="text" class="form-control" id="fname" placeholder="" name="fname" value="" disabled="">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="fno">Phone Number</label>
+                                <input type="text" class="form-control" id="fno" placeholder="" name="fno" value="" disabled="">
+                                <div class="invalid-feedback">
+                                    Valid Phone number is required.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="fmail">Email <span class="text-muted">(Optional)</span></label>
+                            <input type="email" class="form-control" id="fmail" name="fmail" placeholder="you@example.com" value="" disabled="">
+                            <div class="invalid-feedback">
+                                Please enter a valid email address.
+                            </div>
+                        </div>
+
+                        <br>
+                        <h6>Mother</h6>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="mname">Name</label>
+                                <input type="text" class="form-control" id="mname" name="mname" placeholder="" value="" disabled="">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="mno">Phone Number</label>
+                                <input type="text" class="form-control" id="mno" name="mno" placeholder="" value="" disabled="">
+                                <div class="invalid-feedback">
+                                    Valid Phone number is required.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mmail">Email <span class="text-muted">(Optional)</span></label>
+                            <input type="email" class="form-control" id="mmail" name="mmail" placeholder="you@example.com" value="" disabled="">
+                            <div class="invalid-feedback">
+                                Please enter a valid email address.
+                            </div>
+                        </div>
+
+
+                        <br>
+                        <h6>Other</h6>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="oname">Name</label>
+                                <input type="text" class="form-control" id="oname" name="oname" placeholder="" value="" disabled="">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="ono">Phone Number</label>
+                                <input type="text" class="form-control" id="ono" name="ono" placeholder="" value="" disabled="">
+                                <div class="invalid-feedback">
+                                    Valid Phone number is required.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="omail">Email <span class="text-muted">(Optional)</span></label>
+                            <input type="email" class="form-control" id="omail" name="omail" placeholder="you@example.com" value="" disabled="">
+                            <div class="invalid-feedback">
+                                Please enter a valid email address.
+                            </div>
+                        </div>
+
+                        <hr class="mb-4">
+
+                        <h4 class="mb-3">Emergency Contact</h4>
+
+
+                        <div class="mb-3">
+                            <label for="police">Police</label>
+                            <input type="text" class="form-control" id="police" name="police" placeholder="" value="" disabled="">
+
+                        </div>
+
+
+
+                        <div class="mb-3">
+                            <label for="fire">Fire</label>
+                            <input type="text" class="form-control" id="fire" name="fire" placeholder="" value="" disabled="">
+
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="hospital">Hospital</label>
+                            <input type="text" class="form-control" id="hospital" name="hospital" placeholder="" value="" disabled="">
+
+                        </div>
+
+
+                        <hr class="mb-4">
+
+                        <h4 class="mb-3">Family Physician</h4>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="phyname">Name</label>
+                                <input type="text" class="form-control" id="phyname" name="phyname" placeholder="" value="" disabled="">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="phyno">Phone Number</label>
+                                <input type="text" class="form-control" id="phyno" name="phyno" placeholder="" value="" disabled="">
+                                <div class="invalid-feedback">
+                                    Valid Phone number is required.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="phymail">Email <span class="text-muted">(Optional)</span></label>
+                            <input type="email" class="form-control" id="phymail" name="phymail" placeholder="you@example.com" value="" disabled="">
+                            <div class="invalid-feedback">
+                                Please enter a valid email address.
+                            </div>
+                        </div>
+
+                        <br>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="phyname2">Name</label>
+                                <input type="text" class="form-control" id="phyname2" name="phyname2" placeholder="" value="" disabled="">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="phyno2">Phone Number</label>
+                                <input type="text" class="form-control" id="phyno2" name="phyno2" placeholder="" value="" disabled="">
+                                <div class="invalid-feedback">
+                                    Valid Phone number is required.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="phymail2">Email <span class="text-muted">(Optional)</span></label>
+                            <input type="email" class="form-control" id="phymail2" name="phymail2" placeholder="you@example.com" value="" disabled="">
+                            <div class="invalid-feedback">
+                                Please enter a valid email address.
+                            </div>
+                        </div>
+
+                        <hr class="mb-4">
+                        <h4 class="mb-3">Reunion Location</h4>
+                         <div class="mb-3">
+                            <label for="reunionclose">Right Outside Your Residence</label>
+                            <textarea class="form-control" id="reunionclose" name="reunionclose" rows="3" cols="80" value="" disabled=""></textarea>
+                           
+                        </div>
+                        <div class="mb-3">
+                            <label for="reunionfar">Away from the neighbourhood, in case you cannot return home</label>
+                            <textarea class="form-control" id="reunionfar" name="reunionfar" rows="3" cols="80" value="" disabled=""></textarea>
+                           
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="reunionadd">Address</label>
+                            <input type="text" class="form-control" name="reunionadd" id="reunionadd" placeholder="" value="" disabled="">
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="reunionphone">Phone Number</label>
+                            <input type="text" class="form-control" name="reunionphone" id="reunionphone" placeholder="" value="" disabled="">
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="reunionroute">Route to try first</label>
+                            <textarea class="form-control" name="reunionroute" id="reunionroute" rows="2" cols="80" value="" disabled=""></textarea>
+
+                        </div>
+                        
+                            
+                        <hr class="">
+                        <button class="btn btn-primary btn-lg btn-block" type="submit">Emergency Checklist</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+   
+    
+
+</body></html>
